@@ -1,0 +1,297 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: rgb(23, 23, 23);
+  color: rgb(245 245 245);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.noise {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0.035;
+  z-index: 10;
+  pointer-events: none;
+  background-image: url('/gifs/noise.gif');
+}
+
+main {
+  padding: 4rem 15rem 10rem 15rem;
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 1.5rem;
+  margin: 0 auto;
+  max-width: 1300px;
+}
+
+.bento {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+}
+
+.introduction {
+  height: 13rem;
+}
+
+.introduction section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  width: 100%;
+}
+.introduction section img {
+  width: 94px;
+  height: 94px;
+  border-radius: 100%;
+  object-fit: cover;
+  object-position: center;
+  border: 1px solid #fefefe;
+}
+
+.introduction section div {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.introduction section div h1 {
+  font-size: 1.5rem;
+  line-height: 1.2rem;
+}
+.introduction section div p {
+  font-weight: 400;
+  line-height: 1.5rem;
+}
+
+.social {
+  transition: all 0.3s ease;
+}
+
+.social:hover {
+  scale: 0.95;
+}
+
+.social:hover img {
+  transition: all 0.5s ease;
+  transform: rotate(360deg);
+  scale: 0.5;
+}
+.social img {
+  width: 128px;
+  height: 128px;
+}
+
+.description {
+  flex-direction: column;
+  align-items: start !important;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.description h2 {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-family: 'Nanum Myeongjo', serif;
+  font-weight: 700;
+}
+
+.english-level {
+  flex-direction: column;
+  padding: 16px;
+}
+
+.english-level h3 {
+  font-size: 1.125rem;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.english-level p {
+  font-size: 8rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.info {
+  flex-direction: column;
+  overflow: hidden;
+  padding: 2rem 0;
+  font-weight: 700;
+}
+
+.brithday {
+  color: rgb(129 140 248);
+  background-color: rgb(35 34 76);
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+.brithday span {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.country {
+  background-color: #ffad7756;
+}
+
+.discord {
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.discord section {
+  display: flex;
+  gap: 0.8rem;
+  justify-content: center;
+  align-items: center;
+  rotate: -5deg;
+}
+
+.discord section img {
+  width: 46px;
+  height: 46px;
+}
+
+.github {
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  padding: 1rem;
+}
+
+.github-background {
+  background-color: #0007;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 10;
+}
+
+.github:hover {
+  scale: 0.95;
+}
+.github:hover .github-background {
+  background-color: #0000;
+}
+
+.github-gif {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
+  object-position: center;
+}
+.github section {
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.github section h3 {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-family: 'Nanum Myeongjo', serif;
+  font-weight: 700;
+}
+
+.github section img {
+  width: 48px;
+  height: 48px;
+}
+
+.skills {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  border-radius: 16px;
+  place-content: center;
+  place-items: center;
+  row-gap: 10px;
+  padding: 3rem 1.5rem;
+}
+.skills img {
+  width: 32px;
+  height: 32px;
+}
+
+@media (max-width: 1100px) {
+  main {
+    padding: 4rem 5rem 10rem 5rem;
+  }
+}
+
+@media (max-width: 800px) {
+  main {
+    padding: 4rem 0.5rem 10rem 0.5rem;
+  }
+}
+
+@media (max-width: 645px) {
+  main {
+    gap: 1rem;
+    padding: 3rem 1rem;
+  }
+
+  .introduction {
+    grid-column: span 6 / span 6 !important;
+  }
+
+  .social {
+    grid-column: span 3 / span 3 !important;
+  }
+
+  .social img {
+    width: 74px;
+    height: 74px;
+  }
+
+  .description {
+    grid-column: span 6 / span 6 !important;
+  }
+
+  .english-level {
+    grid-column: span 4 / span 4 !important;
+  }
+
+  .container {
+    grid-column: span 2 / span 2 !important;
+  }
+
+  .discord {
+    grid-column: span 6 / span 6 !important;
+  }
+
+  .github {
+    grid-column: span 6 / span 6 !important;
+  }
+
+  .skills {
+    grid-column: span 6 / span 6 !important;
+  }
+}

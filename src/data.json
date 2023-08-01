@@ -1,0 +1,37 @@
+{
+  "name": "Alex Tomas",
+  "image": "/images/self-image.jpg",
+  "y/o": 19,
+  "profession": "Software Developer",
+  "email": "atomasllimos@gmail.com",
+  "linkedin": "https://www.linkedin.com/in/alex-tomas--/",
+  "about": {
+    "title": "Hello World ⭐",
+    "content": [
+      "I come from Spain and work as a Software Engineer. I've been programming for as long as I can remember, and I'm currently spending my time with the wonderful people at ThePowerMBA.",
+      "Beyond programming, I'm really interested in motorsport and fitness. You can often find me spending my time at the gym. Either that or I'll be out driving."
+    ]
+  },
+  "englishLevel": "C1",
+  "dateOfBirth": "24/02/2004",
+  "discord": "Alex Tomas#6617",
+  "github": "https://github.com/alexxtomas",
+  "skills": {
+    "html": "/skills/html.svg",
+    "css": "/skills/css.svg",
+    "javascript": "/skills/javascript.svg",
+    "typescript": "/skills/typescript.svg",
+    "react": "/skills/react.svg",
+    "nextjs": "/skills/nextjs.svg",
+    "tailwindcss": "/skills/tailwindcss.svg",
+    "chakraui": "/skills/chakraui.svg",
+    "nodejs": "/skills/nodejs.svg",
+    "mongodb": "/skills/mongodb.svg",
+    "postgresql": "/skills/postgresql.svg",
+    "redis": "/skills/redis.svg",
+    "supabase": "/skills/supabase.svg",
+    "firebase": "/skills/firebase.svg",
+    "docker": "/skills/docker.svg",
+    "git": "/skills/git.svg"
+  }
+}
